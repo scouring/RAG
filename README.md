@@ -1,7 +1,6 @@
-# Introduction to Retrieval Augmented Generation
+# Retrieval Augmented Generation
 
-This repository will introduce you to Retrieval Augmented Generation (RAG) with
-easy to use examples that you can build upon. The examples use Python with
+The examples use Python with
 Jupyter Notebooks and CSV files. The vector database uses the Qdrant database
 which can run in-memory.
 
@@ -52,51 +51,20 @@ completion = client.chat.completions.create(
 print(completion.choices[0].message)
 ```
 
-## Lesson 1: Import your data
+## Import your data
 
-Learn how to use Pandas to import your data from a CSV file. The data will be used to create the embeddings for the vector database later and you will need to format it as a list of dictionaries.
+Use Pandas to import your data from a CSV file. The data will be used to create the embeddings for the vector database later and you will need to format it as a list of dictionaries.
 
 Notebook: [Managing Data](./examples/1-managing-data/example.ipynb)
 
-## Lesson 2: Create embeddings
+## Create embeddings
 
 Use Sentence Transformers to create the embeddings for your data. This will be used to store the vectors in the Qdrant database. You will verify that the embeddings are created and stored in the database and that a search works correctly
 
 Notebook: [Creating and verifying Embeddings](./examples/2-embeddings/embeddings.ipynb)
 
-## Lesson 3: Create a RAG with LLM and Qdrant using your own data
+## Create a RAG with LLM and Qdrant using your own data
 
 Use a local LLM with Llamafile or an OpenAI API endpoint to create a RAG with your own data. The end result should be in your own repository containing the complete code for the enhanced RAG pattern based on the example provided.
 
 Notebook: [Applied Rag Notebook](./examples/3-applied-rag/embeddings.ipynb)
-
-## Lesson 4: Practice Lab
-
-Use the [included practice lab](./lab.md) to apply the content you've learned in this week. Follow the steps to create your own repository and apply the requirements to complete the lab.
-
-
-## Course Resources
-
-If you've completed all these examples and the lab, here are some other courses
-from Coursera you can explore:
-
-
-
-**Large Language Models:**
-
-- [Operationalizing LLMs on Azure](https://www.coursera.org/learn/llmops-azure)
-- [Using Databricks with
-  LLMs](https://www.coursera.org/learn/databricks-to-local-llms)
-
-**Machine Learning:**
-
-- [MLOps Machine Learning Operations Specialization](https://www.coursera.org/specializations/mlops-machine-learning-duke)
-- [Open Source Platforms for MLOps](https://www.coursera.org/learn/open-source-platforms-duke)
-- [Python Essentials for MLOps](https://www.coursera.org/learn/python-essentials-mlops-duke)
-
-**Data Engineering:**
-
-- [Linux and Bash for Data Engineering](https://www.coursera.org/learn/linux-and-bash-for-data-engineering-duke)
-- [Web Applications and Command-Line tools for Data Engineering](https://www.coursera.org/learn/web-app-command-line-tools-for-data-engineering-duke)
-- [Python and Pandas for Data Engineering](https://www.coursera.org/learn/python-and-pandas-for-data-engineering-duke)
-- [Scripting with Python and SQL for Data Engineering](https://www.coursera.org/learn/scripting-with-python-sql-for-data-engineering-duke)
